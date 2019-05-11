@@ -1,23 +1,12 @@
-\documentclass[14pt,a4paper,openbib]{extarticle}
+\documentclass[14pt, a4paper]{extarticle}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{indentfirst, microtype, listings}
 \usepackage[unicode, colorlinks=true, allcolors=black]{hyperref}
-\usepackage[english,russian]{babel}
-\usepackage{amsfonts,amssymb,amsmath}
-%\usepackage{amsthm}
-%\usepackage{latexsym}
-\usepackage{cmap} % для кодировки шрифтов в pdf
-%\usepackage{mathtext}
-%\usepackage{indentfirst}
 \usepackage{setspace}
-%\usepackage{ulem}
-\usepackage{enumerate}
-%\usepackage{graphics}
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 \graphicspath{{images/}}
-\pagestyle{plain}
-
-\usepackage{listings} % Вменяемая поддержка листингов кода
 \usepackage{xcolor} % Подстветка ^_^
 \lstset{
     basicstyle=\small\ttfamily,
@@ -30,18 +19,8 @@
     keywordstyle=\color{blue}, % keyword color
     stringstyle=\color{red} % string color
 }
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 
-%\newtheorem{opr}{Определение}[section] %Используется для автоматического нумерования определений
-% Пример:
-%\begin{opr}
-%Функцией--оригиналом называется комплекснозначная\\ функция действительного переменного, удовлетворяющая следующим условиям
-%\end{opr}
-
-\numberwithin{equation}{section}
-\usepackage[left=3cm, top=2cm, right=1.5cm, bottom=2cm, nohead]{geometry}
-\linespread{1.3} % полуторный интервал
-% Это плохой Times New Roman, который не умеет в жирный, курсив и черту :/
-\renewcommand{\rmdefault}{ftm} % Times New Roman
 
 \begin{document} % Начало документа
 \begin{titlepage}
