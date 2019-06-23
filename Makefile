@@ -12,7 +12,7 @@ all:
 	libreoffice --headless --convert-to pdf tp-output.fodt
 
 	pdflatex diplom.tex
-	# biber diplom
+	biber diplom
 	pdflatex diplom.tex
 	pdflatex diplom.tex
 
