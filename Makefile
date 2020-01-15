@@ -7,14 +7,18 @@ DIRECTOR = Д.В. Груздев
 SED = "s/{{theme}}/${THEME}/; s/{{student}}/${STUDENT}/; s/{{degree}}/${DEGREE}/; s/{{director}}/${DIRECTOR}/"
 DOC = diplom
 
-all:
-	sed -e ${SED} titlepage.fodt > tp-output.fodt
-	libreoffice --headless --convert-to pdf tp-output.fodt
-
+all: titlepage
 	pdflatex diplom.tex
 	biber diplom
 	pdflatex diplom.tex
 	pdflatex diplom.tex
+
+pdflatex:
+	@pdflatex diplom.tex
+
+titlepage:
+	@sed -e ${SED} titlepage.fodt > tp-output.fodt
+	libreoffice --headless --convert-to pdf tp-output.fodt
 
 clean:
 	rm -f ./grap/*.pdf
