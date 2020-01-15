@@ -18,5 +18,4 @@ all:
 
 clean:
 	rm -f ./grap/*.pdf
-	rm -f *.aux *.bbl *.bcf *.blg *.log *out *.run.xml *.toc tp-output.fodt
-	
+	rm -f *.aux *.bbl *.bcf *.blg *.log *out *.run.xml *.toc
