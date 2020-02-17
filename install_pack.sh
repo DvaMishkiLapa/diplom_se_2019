@@ -11,6 +11,8 @@ if [[ "$distr" == "DISTRIB_ID=Ubuntu" ]]; then
     sudo apt install cm-super
     echo "############ Install texlive-lang-cyrillic ############"
     sudo apt install texlive-lang-cyrillic
+    echo "############ Install texlive-fonts-recommended ############"
+    sudo apt-get install texlive-fonts-recommended
     echo "############ Install libreoffice ############"
     sudo apt install libreoffice
 else
@@ -20,5 +22,6 @@ else
     echo "############      2. biber                                      ############"
     echo "############      3. cm-super                                   ############"
     echo "############      4. texlive-lang-cyrillic                      ############"
-    echo "############      5. libreoffice                                ############"
+    echo "############      5. install texlive-fonts-recommended          ############"
+    echo "############      6. libreoffice                                ############"
 fi
